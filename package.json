@@ -1,0 +1,29 @@
+{
+  "name": "ts-sort-algorythm",
+  "version": "1.0.0",
+  "description": "A typescript algorythm to sort different data structures",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LanciWeb/ts-sort-algorythm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LanciWeb/ts-sort-algorythm/issues"
+  },
+  "homepage": "https://github.com/LanciWeb/ts-sort-algorythm#readme",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  }
+}

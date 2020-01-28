@@ -1,15 +1,9 @@
-export interface Sortable {
-  length: number;
-  swap: (l: number, r: number) => void;
-  compare: (l: number, r: number) => boolean;
-}
-
 abstract class Sorter {
   abstract length: number;
   abstract swap: (l: number, r: number) => void;
   abstract compare: (l: number, r: number) => boolean;
 
-  protected sort = (): void => {
+  public sort = (): void => {
     const { length } = this;
 
     for (let i = 0; i < length; i++) {
